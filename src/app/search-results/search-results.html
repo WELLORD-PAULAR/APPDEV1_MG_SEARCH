@@ -1,0 +1,14 @@
+<div class="container py-5">
+	<h2 class="mb-4">Search Results</h2>
+	<button class="btn btn-secondary mb-3" (click)="goBack()">&larr; Back to Search</button>
+	<div *ngIf="filteredDetails().length === 0" class="alert alert-warning">No detailed results found.</div>
+	<ul class="list-group">
+		@for (item of filteredDetails(); track item.title) {
+			<li class="list-group-item">
+				<h5>{{ item.title }}</h5>
+        <p><a [href]="item.url" target="_blank">{{ item.url }}</a></p>
+				<p>{{ item.detail }}</p>
+			</li>
+		}
+	</ul>
+</div>

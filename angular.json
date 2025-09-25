@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "APPDEV1_MG_SEARCH": {
+    "search_engine": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -25,7 +25,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ]
           },
           "configurations": {
@@ -56,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "APPDEV1_MG_SEARCH:build:production"
+              "buildTarget": "search_engine:build:production"
             },
             "development": {
-              "buildTarget": "APPDEV1_MG_SEARCH:build:development"
+              "buildTarget": "search_engine:build:development"
             }
           },
           "defaultConfiguration": "development"
