@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "search_engine": {
+    "APPDEV1_MG_SEARCH": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "search_engine:build:production"
+              "buildTarget": "APPDEV1_MG_SEARCH:build:production"
             },
             "development": {
-              "buildTarget": "search_engine:build:development"
+              "buildTarget": "APPDEV1_MG_SEARCH:build:development"
             }
           },
           "defaultConfiguration": "development"
